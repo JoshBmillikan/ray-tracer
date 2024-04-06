@@ -20,7 +20,7 @@ impl Scene {
     pub fn new(width: u32, height: u32) -> Self {
         Self {
             camera: Camera {
-                viewport: Vector2::new(2.0f32, 2.0f32 * (width / height) as f32),
+                viewport: Vector2::new(2.0f32 * (width / height) as f32, 2.0f32),
                 resolution: Vector2::new(width, height),
                 center: Vector3::new(0., 0., 0.),
                 focal_length: 1.,
