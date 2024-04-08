@@ -18,7 +18,7 @@ pub struct Ray {
 
 impl Scene {
     pub fn new(width: u32, height: u32) -> Self {
-        let viewport_height = 12.;
+        let viewport_height = 2.;
         Self {
             camera: Camera {
                 viewport: Vector2::new(viewport_height * (width as f32 / height as f32), viewport_height),
