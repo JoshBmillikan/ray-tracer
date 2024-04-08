@@ -42,7 +42,7 @@ impl Raytracer {
             self.image.run_iteration(|x, y| {
                 let ray = self.scene.fire_ray(x, y);
                 let color = ray.color();
-                Vector4::new(color.x, color.y, color.z, 1.)
+                Vector4::new(color.x, color.y, color.z, 1.0)
             });
             let percent = ((i + 1) as f32 / iterations as f32) * 100.;
             println!("{percent:.2}%");
